@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<link type="text/css" rel="stylesheet" href="assets/icons/flaticon.css" />
+	<link type="text/css" rel="stylesheet" href="style.css" />
+	<title>Beat it!</title>
+</head>
+
+<body>
+	<div class="background"></div>
+	<main id="index">
+		<section class="canvash active">
+			<header class="dfss" id="header">
+				<div>
+					<div class="item min left dfcc background1">
+						<div class="dfcc fcol txt turn_true">
+							<span id="header_player_name">Player</span>
+						</div>
+					</div>
+					<div class="item min left dfcc background0">
+						<div class="left nb dfcc border1">
+							<i class="m flaticon-checkered-flag"></i>
+						</div>
+						<div class="dfcc txt">
+							<h3>Stage:</h3>
+							<h3 id="header_stage">1</h3>
+						</div>
+					</div>
+					<div class="item min left dfcc background0">
+						<div class="left nb dfcc border1">
+							<i class="m flaticon-half-filled-rating-star"></i>
+						</div>
+						<div class="dfcc txt">
+							<h3>Score:</h3>
+							<h3 id="header_score">0</h3>
+						</div>
+					</div>
+					
+					<div class="item min left dfcc background0">
+						<div class="left nb dfcc border1">
+							<i class="m flaticon-mark-as-favorite-star"></i>
+						</div>
+						<div class="dfcc txt">
+							<h3>High Score:</h3>
+							<h3 id="header_highscore">0</h3>
+						</div>
+					</div>
+				</div>
+				<div>
+					<h5>Press 1 for first camera</h5>
+					<h5>Press 2 for second camera</h5>
+					<h5>Press 3 for third camera</h5>
+				</div>
+				<div>
+					<h5>Press y for yellow light</h5>
+					<h5>Press w for white light</h5>
+					<h5>Press b for blue light</h5>
+				</div>
+			</header>
+			<main id="canvash"></main>
+			<section class="modal alert active" id="init">
+				<div class="dfcc table fcol">
+					<div class="tr background1 border1 dfcc fcol">
+						<div class="fcc">
+							<div class="input">
+								<label>Player Name</label>
+								<input type="text" id="player_name" placeholder="Name...">
+							</div>
+							<div class="input">
+								<label>High Score</label>
+								<span id="init_highscore">0</span>
+							</div>
+						</div>
+						<div>
+							<button id="start">Start</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="modal alert fcol " id="result">
+				<div class="dfcc table fcol">
+					<div class="tr background1 border1 dfcc fcol">
+						<div class="fcc">
+							<div class="input">
+								<label>Player Name</label>
+								<span id="result_playername">Player</span>
+							</div>
+							<div class="input">
+								<label>Score</label>
+								<span id="result_score">0</span>
+							</div>
+							<div class="input">
+								<label>High Score</label>
+								<span id="result_highscore">Player: 0</span>
+							</div>
+						</div>
+						<div>
+							<button id="result_close">Close</button>
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>
+	</main>
+	<script src="js/libs/three.js"></script>
+	<script src='js/libs/EasePack.min.js'></script>
+	<script src="js/libs/GLTFLoader.js"></script>
+	<script src='js/libs/TweenLite.min.js'></script>
+	<script src='js/libs/Tween.min.js'></script>
+	<!--  -->
+	<script src="js/consts.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/game.js"></script>
+</body>
+
+</html>
